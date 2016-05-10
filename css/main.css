@@ -4,10 +4,18 @@
 body,html{
   margin: 0;
   color: #fff;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    font-family: Quantico, sans-serif;
 }
 
 h1,h2,h3{
   margin: 0;
+  font-style: italic;
+
 }
 
 ul{
@@ -23,27 +31,27 @@ a{
 
 p{
   margin:0;
+  color: darkred;
 }
 
 /*Header Styles*/
 header{
   width: 100%;
   height: 100px;
-  background-color: #333;
   margin: 0;
-  color: #fff;
   position: fixed;
-  background-color: rgba(0,0,0,0.5)
+  background-color: rgba(0,0,0,0.7)
 }
 
 .logo{
   height: 100%;
-  width:200px;
+  width:300px;
   float: left;
 }
 
 .logo h1{
-  margin:30px 25px;
+  margin:20px 50px;
+  font-size: 2.5em;
 }
 
 .menu{
@@ -52,19 +60,26 @@ header{
   float: right;
 }
 
+.menu ul{
+  padding-left: 75px;
+}
+
 .menu li{
   margin-top: 40px;
   margin-left: 20px;
-  font-size: 1.25em;
+  font-size: 1.1em;
   float: left;
+  color: darkred;
 }
 
 /*Banner Styles*/
 #banner{
   width:100%;
-  height: 900px;
-  background-color: #444;
-  color: #fff;
+  height: 950px;
+  background: url("../img/artistic-apple.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   display: inline-block;
 }
 
@@ -88,29 +103,27 @@ header{
 .button-container{
   width: 100px;
   height: 100px;
-  background-color: #333;
   margin: 5% auto;
   text-align: center;
   border-radius: 100%;
+  color: darkred;
 }
 
 /*About Section Styles*/
 #about{
   width: 100%;
   height: 700px;
-  background-color: #222;
+  background-color: #000;
   display: inline-block;
 }
 
 #about h1{
-  color: #fff;
   text-align: center;
   padding-top: 200px;
-  font-size: 4em;
+  font-size: 5em;
 }
 
 #about p{
-  color: #fff;
   text-align: center;
   padding-top: 50px;
   font-size: 1.5em;
@@ -120,53 +133,55 @@ header{
 #showcase{
   width: 100%;
   height: 400px;
-  background-color: #444;
+  background: url("../img/lightbulb.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 #showcase h1{
   color: #fff;
   text-align: center;
-  padding-top: 100px;
-  font-size: 2.5em;
+  padding-top: 125px;
+  font-size: 3em;
 }
 
 #showcase p{
   text-align: center;
   font-size: 1.25em;
-  padding-top: 25px;
-}
-
-#showcase button{
-  width: 100%;
-  height: 100%;
+  padding-top: 35px;
 }
 
 .button-link{
-  width: 75px;
+  width: 125px;
   height: 25px;
-  border: dashed 2px #333;
-  background-color: #222;
-  margin: 25px auto;
+  border: 2px solid darkred;
+  margin: 35px auto;
   text-align: center;
+  color: darkred;
+  padding-top: 5px;
+  text-shadow: none;
+  border-radius: 5px;
+  font-size: 1.1em;
 }
 
 /*Contact Styles*/
 #contact{
   width: 100%;
-  height: 700px;
-  background-color: #222;
+  height: 600px;
+  background-color: #000;
 }
 
 #contact h1{
   text-align: center;
-  font-size: 4em;
-  padding-top: 150px;
+  font-size: 5em;
+  padding-top: 100px;
 }
 
 #contact p{
   text-align: center;
   font-size: 1.5em;
-  padding-top: 50px;
+  padding-top: 35px;
 }
 
 .email{
@@ -187,15 +202,17 @@ header{
   margin-top: 50px;
   margin-left: 25px;
   text-align: center;
-  padding-top: 8px;
+  padding-top: 5px;
+  font-size: 1.1em;
   color: darkred;
+  text-shadow: none;
+  border-radius: 5px
 }
-
 
 /*Map*/
 #map{
   width: 100%;
-  display: inline-block;
+  display: inline-grid;
 }
 
 #map iframe{
@@ -203,15 +220,30 @@ header{
   height: 100%;
 }
 .map-container{
-  width:95%;
-  height: 350px;
+  width:100%;
+  height: 400px;
   background-color: #222;
   margin: 0 auto;
 }
 
-/*.overlay{
-  width: 95%;
-  height: 350px;
+.overlay{
+  width: 100%;
+  height: 400px;
   background-color: rgba(0,0,0,.5);
   position:absolute;
-}*/
+}
+
+/*Footer Styles*/
+#footer{
+  Width: 100%;
+  height: 100px;
+  background-color: #000;
+}
+
+.copyright{
+  width: 350px;
+  height: 50px;
+  margin: 0 auto;
+  padding-top: 40px;
+  font-size: 1.2em;
+}
