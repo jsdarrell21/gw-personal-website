@@ -29,6 +29,10 @@ a{
   text-decoration: none;
 }
 
+a:hover{
+  color: #fff;
+}
+
 p{
   margin:0;
   color: #730200;
@@ -222,6 +226,7 @@ header{
   text-shadow: none;
   border-radius: 5px
 }
+
 
 /*Map*/
 #map{
