@@ -90,9 +90,15 @@ header{
   font-size: 6em;
 }
 
+.border{
+  border-bottom: solid #fff;
+  border-width: thin;
+}
+
 #banner p{
   text-align: center;
   font-size: 2em;
+  padding-top: 25px;
 }
 
 /*Button Styles*/
